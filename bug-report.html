@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plataforma de Bug Report</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bug-page">
+  <div class="container">
+    <h1 class="titulo">Plataforma de Bug Report</h1>
+
+    <form class="formulario">
+      <label for="titulo">Título do Bug:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Ex: Erro ao logar" required />
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o bug detalhadamente..." required></textarea>
+
+      <label for="prioridade">Prioridade:</label>
+      <select id="prioridade" name="prioridade" required>
+        <option value="">Selecione</option>
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <label for="imagem">Imagem (opcional):</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*" />
+
+      <button type="submit">Enviar Bug</button>
+    </form>
+
+    <a href="index.html" class="voltar">← Voltar ao Portfólio</a>
+  </div>
+</body>
+</html>

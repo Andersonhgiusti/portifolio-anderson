@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Página principal */
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+.texto {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     /* Alinha à esquerda */
+  text-align: left;            /* Alinha o texto à esquerda */
+}
+
+.titulo {
+  color: aqua;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.paragrafo_1,
+.paragrafo_2 {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.btn-bug {
+  padding: 10px 20px;
+  background-color: aqua;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.btn-bug:hover {
+  background-color: #00cccc;
+}
+
+.imagem-perfil {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff55;
+}
+
+/* Página de Bug Report */
+body.bug-page {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff55;
+}
+
+.bug-page .titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color: aqua;
+  font-size: 24px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario select,
+.formulario input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: aqua;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #00cccc;
+}
+
+.voltar {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  text-decoration: underline;
+}
